@@ -17,24 +17,24 @@ const ClientProfile = () => {
   const [userData, setUserData] = useState();
 
   // Using post to send Cookie and fetch user data
-  /* const fetchData = async () => {
+  const fetchData = async () => {
     try {
-      const response = await axios.post(getSingleUser_API_URL, {})
+      const response = await axios.post(getSingleUser_API_URL, {});
 
-      const bookData = await response.data.bookDataAll
-      const usersData = await response.data.userData
+      const bookData = await response.data.bookDataAll;
+      const usersData = await response.data.userData;
 
       if (bookData) {
-        setUserBookData(bookData)
+        setUserBookData(bookData);
       }
       if (usersData) {
-        setUserData(usersData)
+        setUserData(usersData);
       }
     } catch (error) {
-      console.log(error.response)
-      console.log(error)
+      console.log(error.response);
+      console.log(error);
     }
-  }*/
+  };
 
   useEffect(() => {
     fetchData();
