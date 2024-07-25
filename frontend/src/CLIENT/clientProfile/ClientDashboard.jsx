@@ -13,7 +13,6 @@ const ClientDashboard = ({ userBookData }) => {
         issueStatus,
       });
 
-      // Pour test
       console.log(response);
       if (issueStatus === "DELETE") {
         toast.success("Cancel Success");
