@@ -6,12 +6,12 @@ import { Toaster, toast } from 'react-hot-toast'
 const ClientDashboard = ({ userBookData }) => {
   const DELETE_BOOK_API = `${backend_server}/api/v1/requestBooks`
 
-  const handleRemoveBook = async (transactionId, issueStatus) => {
+ /* const handleRemoveBook = async (transactionId, issueStatus) => {
     try {
       const response = await axios.patch(DELETE_BOOK_API, {
         id: transactionId,
         issueStatus,
-      })
+      })*/
 
       console.log(response)
       if (issueStatus === 'DELETE') {
