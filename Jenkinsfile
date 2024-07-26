@@ -8,4 +8,9 @@ node {
       sh "${scannerHome}/bin/sonar-scanner"
     }
   }
+
+  stage('Jenkins Deployment') {
+
+    sh "sudo docker compose up -d --build"
+  }
 }
