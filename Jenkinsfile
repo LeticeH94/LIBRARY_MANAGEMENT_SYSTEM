@@ -11,6 +11,6 @@ node {
 
   stage('Jenkins Deployment') {
 
-    sh "sudo docker compose up -d --build"
+    sh "docker compose up -d --build"
   }
 }
